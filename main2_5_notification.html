@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> 알림 - Hada App</title>
+  <link rel="icon" href="/image/apple-touch-icon-180x180.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="./CSS/default.css">
+  <link rel="stylesheet" href="./css/main2_5.css">
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src="./js/submenu.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <p class="submenu"><img src="./image/01.Start,Main_page1/SubMenu_Button.svg" alt="서브메뉴버튼"></p>
+
+      <p><a href="./main1_1_calendar.html"><img src="./IMAGE/01.Start,Main_page1/LogoImage_button.svg" alt="홈버튼"></a>
+      </p>
+    </header>
+    <ul class="sub">
+
+      <li class="btns">
+        <p><img src="./image/Overlay/SubMenu_Button.svg" alt="서브메뉴버튼"></p>
+
+        <p class="close"><img src="./image/Overlay/Close_icon.svg" alt="닫기버튼"></p>
+      </li><!--//btns-->
+
+      <li class="texts">
+        <ul>
+          <li class="text">
+            <a href="./sub_profile.html">
+              <img src="./image/Overlay/Profile_icon.svg" alt="내프로필아이콘">
+              <p>내 프로필</p>
+            </a>
+          </li>
+        </ul>
+        <hr>
+        <ul>
+          <li class="text">
+            <a href="#"><img src="./image/Overlay/Notice_icon.svg" alt="공지사항아이콘">
+              <p>공지사항</p>
+            </a>
+          </li>
+          <li class="text">
+            <a href="./sub_shop.html"><img src="./image/Overlay/HadaShop_icon.svg" alt="하다샵아이콘">
+              <p>하다샵</p>
+            </a>
+          </li>
+          <li class="text">
+            <a href="./sub_memorybox.html">
+              <img src="./image/Overlay/Chest_icon.svg" alt="기억보관함아이콘">
+              <p>기억보관함</p>
+            </a>
+          </li>
+          <li class="text">
+            <a href="#">
+              <img src="./image/Overlay/Wheel_icon.svg" alt="설정아이콘">
+              <p>설정</p>
+            </a>
+          </li>
+        </ul>
+        <hr>
+        <ul>
+          <li class="text">
+            <a href="#">
+              <img src="./image/Overlay/Thumb_icon.svg" alt="평가아이콘">
+              <p>앱 평가하기</p>
+            </a>
+          </li>
+        </ul>
+      </li><!--//texts-->
+
+      <li class="version">
+        <ul>
+          <li>버전 1.23</li>
+          <li><a href="./sign_in.html">로그아웃</a></li>
+        </ul>
+      </li><!--//version-->
+    </ul><!--//sub-->
+    <nav>
+      <p><a href="./main1_1_calendar.html"><img src="./image/02.Main_page2/I-Button.svg" alt="I버튼이미지" class="base"></a>
+        <a href="./main1_1_calendar.html"><img src="./image/01.Start,Main_page1/I-Button.svg" alt="I버튼호버"
+            class="on"></a>
+      </p>
+      <p><img src="./image/02.Main_page2/E-Button.svg" alt="E버튼이미지"></a></p>
+    </nav>
+
+    <div class="title">
+      <h1>알림</h1>
+    </div>
+    <section class="contents">
+      <article class="myPost">
+        <p>하다의 회원이 되신 걸 환영해요! 500포인트 적립되었어요.</p>
+        <p><img src="./image/02.Main_page2/close_icon.svg" alt="삭제이미지"></p>
+        <p>5분전
+        </p>
+      </article>
+    </section>
+    <div class="delete_btn">
+      <p>모두 지우기</p>
+    </div>
+    <footer>
+      <div>
+        <a href="./main2_1_peoplespost.html">
+          <p><img src="./image/02.Main_page2/tabler_bubble_icon.svg" alt="둘러보기버튼이미지"></p>
+          <p>둘러보기</p>
+        </a>
+      </div>
+      <div>
+        <a href="./main2_3_mycircle.html">
+          <p><img src="./image/02.Main_page2/solar_star_icon.svg" alt="취미써클버튼이미지"></p>
+          <p>취미써클</p>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <p><img src="./image/02.Main_page2/bell_icon.svg" alt="알림버튼이미지"></p>
+          <p>알림</p>
+        </a>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    // 두 번째 <p> 클릭 시 .contents 삭제하기
+    document.querySelector('.contents .myPost p:nth-child(2)').addEventListener('click', () => {
+      const contents = document.querySelector('.contents');
+      if (contents) {
+        contents.remove();
+      }
+    });
+
+    // .delete_btn 클릭 시 .contents 삭제하기
+    document.querySelector('.delete_btn').addEventListener('click', () => {
+      const contents = document.querySelector('.contents');
+      if (contents) {
+        contents.remove();
+      }
+    });
+  </script>
+</body>
+
+</html>

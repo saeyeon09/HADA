@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>일기쓰기 - Hada App</title>
+  <link rel="icon" href="/image/apple-touch-icon-180x180.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="./CSS/default.css">
+  <link rel="stylesheet" href="./css/sub_diary.css">
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src="./js/popup.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="title">
+      <a href="./main1_1_calendar.html"><img src="./image/03.Sub_page/left_AngleBracket.svg" alt="왼쪽화살표"></a>
+      <h1>일기</h1>
+    </div>
+    <div class="save">
+      <h1><a href="./sub_complete.html">
+          저장</a>
+      </h1>
+    </div>
+  </header>
+  <section class="contents">
+    <article class="emoticon">
+      <p class="today"><img src="./image/03.Sub_page/emoticon.svg" alt="이모티콘플러스"></p>
+    </article>
+    <div class="popup">
+      <p>오늘 내가 느낀 감정은...</p>
+      <img src="./image/Overlay/closeX.svg" alt="닫기버튼" class="closeX">
+      <ul>
+        <li><img src="./image/Overlay/SoHappy_day.svg" alt="day1">
+          <p>행복해!</p>
+        </li>
+        <li><img src="./image/Overlay/Good_day.svg" alt="day2">
+          <p>좋아~</p>
+        </li>
+        <li><img src="./image/Overlay/Itsokay_day.svg" alt="day3">
+          <p>그저 그래</p>
+        </li>
+        <li><img src="./image/Overlay/Sad_day.svg" alt="day4">
+          <p>슬퍼..</p>
+        </li>
+        <li><img src="./image/Overlay/Mad_day.svg" alt="day5">
+          <p>화가 나!!</p>
+        </li>
+      </ul>
+    </div><!--//overlay-->
+    <article class="date">
+      <h2>2024년 10월 9일 수요일 <span><img src="./image/03.Sub_page/lock_icon.svg" alt="자물쇠">
+          <a href="#">비밀상자</a><img src="./image/03.Sub_page/option_arrow_icon.svg" alt="아래화살표">
+        </span></h2>
+    </article>
+    <article class="text">
+      <p>오늘은 어떤 하루였나요?</p>
+    </article>
+  </section>
+  <footer>
+    <a href="#">
+      <p><img src="./image/03.Sub_page/plus.svg" alt="플러스버튼"></p>
+      <p><img src="./image/03.Sub_page/bringingpicture.svg" alt="사진불러오기버튼"></p>
+    </a>
+  </footer>
+</body>
+
+</html>

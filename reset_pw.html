@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>비밀번호찾기 - Hada App</title>
+  <link rel="icon" href="/image/apple-touch-icon-180x180.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="CSS/default.css">
+  <link rel="stylesheet" href="./css/common.css">
+</head>
+
+<body>
+  <div class="sign_container">
+    <div class="content">
+      <p><img src="./IMAGE/01.Start,Main_page1/Sign_LogoImage.svg" alt="로그인로고이미지" class="signlogo"></p>
+      <h1 class="start-tt text-center">아이디/비밀번호 찾기</h1>
+      <form action="./sign_in.html" method="post">
+
+        <div id="emailcode">
+          <p><label for="user_email"></label>
+            <input type="email" id="user_email" placeholder="가입할 때 사용한 이메일 입력" class="input">
+          </p>
+          <p>
+            <input type="button" value="ID 확인" class="border_btn">
+          </p>
+        </div>
+
+        <div id="emailcode">
+          <p><label for="user_email"></label>
+            <input type="email" id="user_email" placeholder="인증번호를 보낼 이메일 입력" class="input">
+          </p>
+          <p>
+            <input type="button" value="보내기" class="border_btn">
+          </p>
+        </div>
+
+        <div id="emailcode">
+          <p><label for="code"></label>
+            <input type="number" max="6" id="code" placeholder="인증번호 입력" class="input">
+          </p>
+          <p>
+            <input type="button" value="인증확인" class="border_btn">
+          </p>
+        </div>
+
+        <p>
+          <label for="new_password"></label>
+          <input type="password" id="new_password" placeholder="새 비밀번호 입력" class="input">
+        </p>
+        <p>
+          <label for="new_password"></label>
+          <input type="password" id="new_password" placeholder="새 비밀번호 재확인 입력" class="input">
+        </p>
+        <a href="./sign_in.html" class="login">
+          <p>변경하기</p>
+        </a>
+        <div class="signin_links">
+          <p><a href="sign_up.html">회원가입 하러가기</a></p>
+          <p><a href="./sign_in.html">로그인 하러가기기</a></p>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
