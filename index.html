@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>로딩 페이지 - Hada App</title>
+  <style>
+    body {
+      transition: opacity 1.5s ease;
+      /* body에 전환 효과 */
+      opacity: 1;
+      /* 초기 상태 */
+    }
+
+    body.fade-out {
+      opacity: 0;
+      /* 페이드아웃 효과 */
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="/image/apple-touch-icon-180x180.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="./css/default.css">
+  <link rel="stylesheet" href="./css/common.css">
+
+
+</head>
+
+<body>
+  <div class="sign_container">
+    <div class="content">
+      <h1 id="monott">HADA</h1>
+      <h2 id="monott2">내가 사랑한 평범한 하루, 일상생활을 기록"하다"</h2>
+      <p class="startlogo"><img src="./IMAGE/01.Start,Main_page1/LogoImage.svg" alt="로고이미지"></p>
+      <p class="startpenimage"><img src="./IMAGE/01.Start,Main_page1/PenImage.svg" alt="펜슬이미지"></p>
+    </div>
+  </div>
+
+</body>
+<script>
+  // 3초 후에 페이지가 부드럽게 페이드아웃된 뒤 다른 페이지로 이동
+  setTimeout(() => {
+    document.body.classList.add('fade-out'); // 페이드아웃 클래스 추가
+    setTimeout(() => {
+      window.location.href = "sign_in.html"; // 다음 페이지로 이동
+    }, 1000); // 페이드아웃 시간과 맞춤
+  }, 3000); // 3초 후에 페이드아웃 시작
+</script>
+
+</html>
